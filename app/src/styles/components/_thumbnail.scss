@@ -1,0 +1,66 @@
+.gapo-thumbnail {
+  display: block;
+  background-color: $body-bg;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+  }
+
+  &.gapo-thumbnail--3x2 {
+    &::after {
+      padding-top: 66.66666667%;
+    }
+  }
+
+  &.gapo-thumbnail--1x1 {
+    &::after {
+      padding-top: 100%;
+    }
+  }
+
+  &.gapo-thumbnail--16x9 {
+    &::after {
+      padding-top: 56.25%;
+    }
+  }
+
+  &.gapo-thumbnail--96 {
+    width: 6rem;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &.gapo-thumbnail--video {
+    width: 13rem;
+
+    .duration {
+      border-radius: 0.25rem;
+      padding: 0.25rem;
+      color: $white;
+      font-weight: 600;
+      line-height: 1;
+      background-color: rgba($color: $body-color, $alpha: 0.6);
+      position: absolute;
+      right: 0.25rem;
+      bottom: 0.25rem;
+    }
+  }
+}

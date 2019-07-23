@@ -1,0 +1,23 @@
+.first-login {
+  padding: 1rem 2rem;
+
+  .action__upload {
+    padding: 0.25rem 0.75rem;
+  }
+
+  &__label {
+    background: #808080;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    border-radius: 0px 100px 100px 0px;
+    position: relative;
+    left: -2rem;
+    line-height: 1.5rem;
+  }
+
+  &__avatar {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+}

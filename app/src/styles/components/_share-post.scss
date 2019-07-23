@@ -1,0 +1,202 @@
+.share-post {
+    .share-post__content {
+        padding-bottom: 0.75rem;
+    }
+    .share__head {
+        background-color: $input-disabled-bg;
+        border-radius: 0.25rem 0.25rem 0;
+        padding: 0.625rem 0.75rem;
+    }
+    .action__upload--photo {
+        i {
+            font-size: 1.5rem;
+            color: #4D4D4D;
+        }
+    }
+    .action--close {
+        position: absolute;
+        right: 0.75rem;
+        top: 0.75rem;
+        margin: 0;
+        &:hover {
+            opacity: .7;
+        }
+    }
+    .box-input__actions {
+        padding: 0 0.75rem 0 0.75rem;
+        a {
+            display: inline-block;
+            max-height: 20px;
+            .icon-emotion-alt {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .icon-feeling {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .create-post__input {
+        margin-right: 2.5rem;
+        width: 100%;
+        resize: none;
+        background: transparent;
+        font-size: 0.875rem;
+        padding: 0.75rem 0.75rem;
+        &:focus {
+            outline: none;
+        }
+        &::placeholder {
+            //font-size: 1.125rem;
+        }
+    }
+    .share-post-details {
+        overflow: hidden;
+        position: relative;
+    }
+    .share__preview {
+        height: 16.875rem;
+        padding-bottom: 3rem;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 8.875rem;
+            top: 8.875rem;
+            left: 0.75rem;
+            right: 0.75rem;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+        }
+    }
+    .show-attachment {
+        position: absolute;
+        top: 13.8rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .border-radius-025x {
+        border-radius: 0.25rem;
+    }
+    .share-quote {
+        font-size: 0.75rem;
+    }
+    .share-quote__content {
+        border-left: 2px solid $border-color;
+        .post-item__content {
+            padding: 0;
+        }
+    }
+    .btn-show-attachment {
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
+        border-radius: 6.25rem;
+        background-color: #ffffff;
+        position: relative;
+        padding: 0.5rem 0.75rem;
+        top: 0.8rem;
+        margin: auto;
+        z-index: 131;
+        display: table;
+        font-weight: normal;
+        .gapo-icon {
+            font-size: 0.5rem;
+        }
+        &:hover {
+            color: #212529;
+            background-color: #d2d2d2;
+            border-color: #cccbcb;
+        }
+    }
+    .share-post__share {
+        line-height: 1.25rem;
+        max-height: 2.5rem;
+        border-radius: 0 0.25rem 0.25rem 0.25rem;
+        border-top: none;
+        .share__dropdown {
+            button {
+                font-weight: 500;
+                opacity: 0.8;
+                padding: 0.3rem 0.75rem;
+                &::after {
+                    display: inline-block;
+                    margin-left: 0.255em;
+                    vertical-align: 0.255em;
+                    content: "";
+                    border-bottom: 0;
+                    border-right: 0.3em solid transparent;
+                    border-top: 0.3em solid;
+                    border-left: 0.3em solid transparent;
+                }
+            }
+            a {
+                opacity: 0.8;
+            }
+            label {
+                cursor: pointer;
+            }
+        }
+    }
+    .share-checkbox-link {
+        padding: 0rem 0.75rem 0.75rem 2.75rem;
+    }
+    .post-item {
+        box-shadow: none;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+    .post-item__attachment {
+        border-radius: 0.25rem;
+        overflow: hidden;
+    }
+    .post-item__head {
+        padding: 0rem 0;
+    }
+    .post-item__content {
+        padding: 0.75rem 0;
+    }
+    .side-menu__item {
+        padding: 0.5rem 0.75rem;
+    }
+    .search-share__input {
+        background-color: #f2f2f2;
+    }
+    .search-share__input {
+        padding-left: 2rem;
+    }
+    .aside__search-box {
+        width: 100%;
+    }
+    .message__link--media {
+        min-width: 5.625rem;
+    }
+    .message__link--description {
+        font-size: 0.875rem;
+        padding: 0.75rem 0.75rem 0rem 0.75rem;
+    }
+    .message__link--title {
+        font-size: 0.875rem;
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    }
+    .message__link {
+        margin-top: 0.75rem;
+    }
+    .gapo-side-menu {
+        .btn {
+            padding: 0.375rem 0.75rem;
+        }
+    }
+    .modal-dialog {
+        min-height: calc(100vh - 60px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    @media(max-width: 768px) {
+        .modal-dialog {
+            min-height: calc(100vh - 20px);
+        }
+    }
+}

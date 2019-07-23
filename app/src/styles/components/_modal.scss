@@ -1,0 +1,23 @@
+.modal--otp {
+  .modal-body {
+    padding: 2.5rem;
+
+  }
+
+  .modal-dialog {
+    max-width: 558px;
+  }
+}
+
+
+.modal-header {
+  background-color: #F5F5F5;
+}
+
+.modal--simple {
+  button.close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}

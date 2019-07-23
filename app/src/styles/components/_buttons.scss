@@ -1,0 +1,43 @@
+.btn-sm {
+  .icon-check {
+    font-size: 0.625rem;
+  }
+}
+
+.btn-light {
+  color: $dark;
+}
+
+.btn-primary-light {
+  @include button-variant(#ECF7E7, #ECF7E7);
+  color: $primary !important;
+}
+
+.btn-alpha-dark {
+  @include button-variant(#1a1a1aa6, #1a1a1aa6);
+  border-color: #808080;
+}
+
+
+a.text-body,
+button.text-body {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &.btn-primary {
+    color: $white;
+  }
+
+  &.btn-block {
+    display: flex;
+  }
+}

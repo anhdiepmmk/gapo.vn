@@ -1,0 +1,5 @@
+@include make-font-face('SF-Pro-Text-Regular', 'SF Pro Text', $weight: 400);
+@include make-font-face('SF-Pro-Text-Light', 'SF Pro Text', $weight: 300);
+@include make-font-face('SF-Pro-Text-Medium', 'SF Pro Text', $weight: 500);
+@include make-font-face('SF-Pro-Text-Semibold', 'SF Pro Text', $weight: 600);
+@include make-font-face('SF-Pro-Text-Bold', 'SF Pro Text', $weight: 700);

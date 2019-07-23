@@ -1,0 +1,65 @@
+.side-menu__item {
+  position: relative;
+  padding: 0.625rem 1rem;
+  @include default-transition();
+
+  &:hover,
+  &.active {
+    color: inherit;
+    //opacity: 0.9;
+  }
+
+  &:hover {
+    background-color: #f5f5f5;
+  }
+
+  &.active {
+    background-color: #EEEEEE;
+  }
+
+  .svg-icon {
+    margin-right: 0.75rem;
+  }
+
+  .icon-plus-circle {
+    font-size: 0.375rem;
+  }
+
+  &.alpha {
+    &.active:after {
+      content: '';
+      position: absolute;
+      width: 0.125rem;
+      background-color: $primary;
+      right: 0;
+      height: 100%;
+    }
+
+    &:hover {
+      background-color: #F5FAF2;
+    }
+
+    &.active {
+      background-color: #F5FAF2;
+    }
+  }
+
+  &.notification--unread {
+    background-color: #E8EEE5;
+  }
+
+  .notification__icon {
+    position: absolute;
+    z-index: 1;
+    left: 3.75rem;
+    bottom: 0.5rem;
+    color: #fff;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    i {
+      font-size: 0.75rem;
+    }
+  }
+}

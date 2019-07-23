@@ -1,0 +1,37 @@
+.font-size-small {}
+
+.font-size-large {
+  font-size: 1rem;
+}
+
+.font-size-small {
+  font-size: 0.75rem;
+}
+
+.font-size-2x {
+  font-size: $font-size-base*2;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.font-weight-semi-bold {
+  font-weight: 600;
+}
+
+
+.font-size-normal {
+  font-size: $font-size-base;
+}
+
+
+.line-height {
+  line-height: 1.4;
+}
+
+.text-overflow-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

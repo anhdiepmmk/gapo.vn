@@ -1,0 +1,22 @@
+.input-group--password {
+  position: relative;
+
+  .form-control {
+    padding-right: 3rem;
+  }
+
+  .input-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0.5rem 1rem;
+
+    .gapo-icon {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,149 @@
+$font-family-base: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$body-bg: #f2f2f2;
+$body-color: #1A1A1A;
+$body-chat: #F8F8F8;
+
+$font-size-base: 0.875rem;
+$line-height-base: 1.4;
+
+
+$secondary: #808080;
+$tertiary: #b3b3b3;
+$primary: #6FBE44;
+$dark: #4d4d4d;
+$danger: #E91111;
+$light: #e5e5e5;
+$blue: #2569EC;
+
+
+$link-color: $body-color;
+$link-hover-color: $dark;
+$link-hover-decoration: none;
+
+$border-radius-lg: 0.5rem;
+$border-radius: 0.25rem;
+$border-color: #e5e5e5;
+
+$input-height: 40px;
+$input-border-color: $border-color;
+$component-active-bg: $primary;
+$input-btn-focus-color: rgba($component-active-bg, .25);
+$input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color;
+$input-focus-border-color: lighten($component-active-bg, 15%);
+$input-focus-color: $input-color;
+$input-focus-width: $input-btn-focus-width;
+$input-focus-box-shadow: $input-btn-focus-box-shadow;
+$input-placeholder-color: $secondary;
+$input-disabled-bg: #f5f5f5;
+
+$input-font-size-lg: 1.125rem;
+$input-height-lg: 3rem;
+
+$enable-validation-icons: false;
+$form-feedback-margin-top: 0.5rem;
+$form-feedback-font-size: $font-size-base;
+
+$custom-select-focus-box-shadow: $input-btn-focus-box-shadow;
+$custom-select-focus-border-color: $input-focus-border-color;
+$custom-select-border-color: $input-border-color;
+$custom-select-height: $input-height;
+$custom-select-padding-x: 1rem;
+
+$custom-control-indicator-size: 1.5rem;
+$custom-control-indicator-checked-bg: $primary;
+$custom-control-indicator-border-color: $input-border-color;
+$custom-control-indicator-checked-border-color: $primary;
+$custom-control-indicator-focus-box-shadow: $input-btn-focus-box-shadow;
+$custom-control-indicator-active-bg: $component-active-bg;
+
+$btn-font-weight: 600;
+$btn-font-size: $font-size-base;
+$btn-padding-y: 0.5rem;
+$btn-line-height: 1.6;
+
+$btn-padding-y-lg: 0.75rem;
+$btn-padding-x-lg: 3.5rem;
+$btn-font-size-lg: 1.125rem;
+$btn-line-height-lg: 1.2;
+
+$btn-line-height-sm: 1;
+$btn-padding-y-sm: 0.375rem;
+$btn-border-radius-sm: 0.25rem;
+
+
+$small-font-size: 85%;
+
+$hr-margin-y: 1.5rem;
+$hr-border-color: $input-border-color;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "light":  $light,
+  "white":  $white,
+  "dark":  $dark,
+  "danger":  $danger,
+  "blue":  $blue,
+  "tertiary":  $tertiary,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  // sm: 576px,
+  // md: 768px,
+  // lg: 992px,
+  // xl: 1232px
+);
+
+$container-max-widths: (
+  // sm: 540px,
+  // md: 720px,
+  // lg: 960px,
+  // xl: 1200px
+);
+
+$box-shadow: 0px 1px 3px rgba(26, 26, 26, 0.05);
+$box-shadow-sm: 0px 1px 1px rgba(26, 26, 26, 0.05);
+$box-shadow-lg: 0px 1px 5px rgba(26, 26, 26, 0.05);
+
+$grid-gutter-width: 0.75rem;
+
+$modal-content-border-width: 0;
+$modal-content-box-shadow-xs: none;
+$modal-content-box-shadow-sm-up: none;
+$modal-content-border-radius: 0.25rem;
+$modal-header-padding: 0.6875rem 0.75rem 0.625rem 0.75rem;
+$modal-header-padding-y: 0.625rem;
+$modal-header-padding-x: 0.75rem;
+$modal-inner-padding: 0.75rem;
+$modal-title-line-height: 1.1875;
+$modal-header-border-width: 0;
+$modal-footer-border-width: 0;
+
+
+$close-font-size: $font-size-base;
+$close-color: $dark;
+
+
+/* dropdown */
+$dropdown-padding-y: 0.5rem;
+$dropdown-item-padding-y: 0.5rem;
+$dropdown-item-padding-x: 1rem;
+$dropdown-link-hover-color: $white;
+$dropdown-link-hover-bg: $primary;
+$dropdown-link-active-color: $white;
+$dropdown-link-active-bg: $primary;
+$dropdown-font-size: $font-size-base;
+$dropdown-border-color: $border-color;
+$dropdown-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+$dropdown-divider-margin-y: 0.25rem;
+$dropdown-divider-bg: #eee;
+
+
+/* tooltip */
+$tooltip-max-width: 300px;
+$tooltip-padding-y: 5px;
+$tooltip-padding-x: 6px;
+$tooltip-border-radius: 0.125rem;
+$tooltip-font-size: 0.75rem;

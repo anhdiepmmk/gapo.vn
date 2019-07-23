@@ -1,0 +1,68 @@
+.gapo-aside--right{
+  .gapo-subtitle{
+    margin-left:0.25rem;
+  }
+}
+.aside-item__more {
+
+  >.btn {
+    margin-right:0.25rem;
+    font-size: 1.5rem;
+    color: $secondary;
+    padding: 0;
+    line-height: 1;
+  }
+}
+.aside__search-box {
+  width: 100%;
+  position: relative;
+  background-color: $white;
+  padding: 0.25rem;
+  @include default-transition();
+  .search-box__input {
+    background-color: $body-bg;
+  }
+}
+.chat__item {
+  padding: 0.375rem 0.75rem;
+  position: relative;
+  cursor: pointer;
+  &:hover,
+  .chat__item{
+    background-color: $body-chat;
+  }
+}
+
+.chat__info {
+  padding: 0.65rem 0.25rem;
+    max-width: 9.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.chat__time{
+  position:relative;
+  padding: 0.65rem 0;
+}
+.time__unactive{
+  font-size: 0.75rem;
+  color: $secondary;
+  padding: 0.5rem 0;
+}
+.time__active{
+  padding: 0.5rem 0.25rem;
+  &:before,
+  .time__active{
+    content: '';
+    width:0.5rem;
+    height: 0.5rem;
+    background-color: $primary;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius:50%;
+  }
+}

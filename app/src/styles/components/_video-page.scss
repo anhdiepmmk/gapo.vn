@@ -1,0 +1,68 @@
+.page-video-detail {
+  overflow: hidden;
+  background-color: $white;
+
+  .gapo-main,
+  .aside__comment,
+  .col {
+    height: 100%;
+  }
+
+  .aside__comment {
+    overflow: auto;
+  }
+
+  .aside__wrapper {
+    border-left: 1px solid #eee;
+    padding-bottom: 50px;
+
+    >.gapo-comment {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 0.5rem 0.75rem;
+    }
+  }
+}
+
+.video-detail__wrapper {
+  height: 100%;
+  overflow: auto;
+}
+
+.video-detail__suggestion {
+  padding: 0 2rem;
+}
+
+.video-detail__info {
+  padding: 0 2rem;
+
+  .post-item__head,
+  .post-item__content{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+.gapo-player {
+  background-color: $black;
+  position: relative;
+
+  &:after {
+    content: '';
+    padding-top: 56.25%;
+    display: block;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}

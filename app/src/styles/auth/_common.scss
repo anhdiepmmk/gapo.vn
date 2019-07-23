@@ -1,0 +1,37 @@
+.page-auth {
+  height: 100%;
+  background-color: $white;
+
+  .gapo-main {
+    min-height: 80%;
+    background-color: $body-bg;
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+
+.auth-block {
+  max-width: 500px;
+  margin: auto;
+
+  .col-input {
+    input {
+      width: 180px;
+    }
+  }
+
+  .col-btn {
+    .btn {
+      width: 108px;
+    }
+  }
+}
+
+
+.auth__box {
+  background-color: $white;
+  padding: 2.5rem;
+  width: 558px;
+  max-width: 100%;
+}

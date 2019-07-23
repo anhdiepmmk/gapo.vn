@@ -1,0 +1,260 @@
+.svg-icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+
+  /* authentication */
+  &.icon-facebook {
+    background-image: url('/assets/images/svg-icons/facebook.svg');
+    width: 28px;
+    height: 28px;
+  }
+
+  &.icon-google {
+    background-image: url('/assets/images/svg-icons/google.svg');
+    width: 28px;
+    height: 28px;
+  }
+
+  /* normal */
+  &.icon-play {
+    background-image: url('/assets/images/svg-icons/play.svg');
+    width: 80px;
+    height: 80px;
+  }
+
+  &.icon-like-circle {
+    background-image: url('/assets/images/svg-icons/like-circle.svg');
+    width: 18px;
+    height: 18px;
+  }
+
+
+  /* navbar */
+  &.icon-bell-alt {
+    background-image: url('/assets/images/svg-icons/bell-alt.svg');
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+
+  &.icon-bell-active {
+    background-image: url('/assets/images/svg-icons/bell-active.svg');
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+
+  &.icon-chat-alt {
+    background-image: url('/assets/images/svg-icons/chat-alt.svg');
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+
+  &.icon-chat-active {
+    background-image: url('/assets/images/svg-icons/chat-active.svg');
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+
+  &.icon-flag-alt {
+    background-image: url('/assets/images/svg-icons/flag-alt.svg');
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+
+  &.icon-flag-active {
+    background-image: url('/assets/images/svg-icons/flag-active.svg');
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+
+  &.icon-friends-alt {
+    background-image: url('/assets/images/svg-icons/friends-alt.svg');
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+
+  &.icon-friends-active {
+    background-image: url('/assets/images/svg-icons/friends-active.svg');
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+
+  &.icon-video-alt {
+    background-image: url('/assets/images/svg-icons/video-alt.svg');
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+
+  &.icon-video-active {
+    background-image: url('/assets/images/svg-icons/video-alt.svg');
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+
+  &.icon-config-alt {
+    background-image: url('/assets/images/svg-icons/config-alt.svg');
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+
+  &.icon-home-alt {
+    background-image: url('/assets/images/svg-icons/home-alt.svg');
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+
+  &.icon-home-active {
+    background-image: url('/assets/images/svg-icons/home-active.svg');
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+
+  &.icon-friends-circle-alt {
+    background-image: url('/assets/images/svg-icons/friends-circle-alt.svg');
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+
+  &.icon-friends-circle-active {
+    background-image: url('/assets/images/svg-icons/friends-circle-active.svg');
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+
+  /* side menu */
+
+  &.icon-feed-colorful {
+    background-image: url('/assets/images/svg-icons/feed-colorful.svg');
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  &.icon-explore {
+    background-image: url('/assets/images/svg-icons/explore.svg');
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  &.icon-checklist {
+    background-image: url('/assets/images/svg-icons/checklist.svg');
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+
+  &.icon-video-gallery {
+    background-image: url('/assets/images/svg-icons/video-gallery.svg');
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  &.icon-bookmark-colorful {
+    background-image: url('/assets/images/svg-icons/bookmark-colorful.svg');
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  &.icon-calendar-colorful {
+    background-image: url('/assets/images/svg-icons/calendar-colorful.svg');
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  &.icon-config-colorful {
+    background-image: url('/assets/images/svg-icons/config-colorful.svg');
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  &.icon-flag-colorful {
+    background-image: url('/assets/images/svg-icons/flag-colorful.svg');
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  &.icon-friends-colorful {
+    background-image: url('/assets/images/svg-icons/friends-colorful.svg');
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  &.icon-help-colorful {
+    background-image: url('/assets/images/svg-icons/help-colorful.svg');
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  &.icon-history-colorful {
+    background-image: url('/assets/images/svg-icons/history-colorful.svg');
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  &.icon-search-colorful {
+    background-image: url('/assets/images/svg-icons/search-colorful.svg');
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  &.icon-color-create-post {
+    background-image: url('/assets/images/svg-icons/color-create-post.svg');
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  &.icon-smile {
+    background-image: url('/assets/images/svg-icons/smiley.svg');
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  &.icon-feeling-1 {
+    background-image: url('/assets/images/svg-icons/feeling-1.svg');
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &.icon-feeling-2 {
+    background-image: url('/assets/images/svg-icons/feeling-2.svg');
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &.icon-feeling-3 {
+    background-image: url('/assets/images/svg-icons/feeling-3.svg');
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &.icon-feeling-4 {
+    background-image: url('/assets/images/svg-icons/feeling-4.svg');
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &.icon-feeling-5 {
+    background-image: url('/assets/images/svg-icons/feeling-5.svg');
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &.icon-feeling-6 {
+    background-image: url('/assets/images/svg-icons/feeling-6.svg');
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &.icon-check-circle {
+    background-image: url('/assets/images/svg-icons/check-circle.svg');
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &.icon-add-photo {
+    background-image: url('/assets/images/svg-icons/image-add.svg');
+    width: 2rem;
+    height: 2rem;
+  }
+
+}

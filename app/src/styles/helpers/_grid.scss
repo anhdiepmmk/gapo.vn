@@ -1,0 +1,42 @@
+.small-gutters {
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+
+  >.col,
+  >[class*="col-"] {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+
+.col-aside {
+  max-width: 22rem + $grid-gutter-width;
+}
+
+.col-256 {
+  max-width: 16rem + $grid-gutter-width;
+}
+
+
+.col-500 {
+  max-width: 31.25rem + $grid-gutter-width;
+}
+
+.col-900 {
+  max-width: 54.5rem + $grid-gutter-width;
+}
+
+.col-360 {
+  max-width: 22.5rem + $grid-gutter-width;
+}
+
+.col-2dot4 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.no-gutters {
+  >.col-360 {
+    max-width: 22.5rem;
+  }
+}

@@ -1,0 +1,9 @@
+//## Bootstrap
+//
+// Core bootstrap variables and mixins
+$img-path: "../images";
+$font-path: "../fonts";
+
+@import "bootstrap-override";
+
+$gapo-min-width: 1060px;

@@ -1,0 +1,330 @@
+.gapo-overlay {
+  background: #000;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 310;
+  bottom: 0;
+  opacity: 0.6;
+  @include default-transition();
+}
+
+.create-post {
+  position: relative;
+  z-index: 311;
+
+  .action__upload--photo {
+    i {
+      font-size: 1.5rem;
+      color: #4D4D4D;
+    }
+  }
+
+  .action--close {
+    position: absolute;
+    right: 1.0625rem;
+    top: 1.25rem;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  .box-input__actions {
+
+    a {
+      display: inline-block;
+      max-height: 20px;
+
+      .icon-emotion-alt {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .icon-feeling {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .create-post__input {
+    margin-right: 2.5rem;
+    width: 100%;
+    resize: none;
+    background: transparent;
+    font-size: 1.125rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      //font-size: 1.125rem;
+    }
+  }
+
+  .create-post__actions {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 0.125rem;
+    max-height: 2.5rem;
+
+    .gapo-icon {
+      font-size: 1rem;
+    }
+
+    .create-post__actions__item {
+      color: $dark;
+      border-radius: 6.25rem;
+      flex: 1 1 auto;
+      padding: 0.35rem;
+
+      &.active {
+        i {
+          color: $primary;
+        }
+      }
+
+      .gapo-icon {
+        font-size: 1.25rem;
+      }
+
+      &:hover {
+        background-color: #f2f2f2;
+      }
+
+      .action--feeling {
+        color: $dark;
+      }
+
+      .dropdown-menu {
+        min-width: 18rem;
+        max-height: 17.5rem;
+        overflow-y: scroll;
+        margin-top: 1.5rem;
+        @include custom-scrollbar();
+      }
+    }
+  }
+
+  .create-post__share {
+    line-height: 1.25rem;
+    border-bottom: 1px solid #eee;
+    max-height: 2.5rem;
+
+    .share__dropdown {
+      button {
+        font-weight: 500;
+        opacity: 0.8;
+        padding: 0.3rem 0.75rem;
+
+        &::after {
+          display: inline-block;
+          margin-left: 0.255em;
+          vertical-align: 0.255em;
+          content: "";
+          border-bottom: 0;
+          border-right: 0.3em solid transparent;
+          border-top: 0.3em solid;
+          border-left: 0.3em solid transparent;
+        }
+      }
+
+      a {
+        opacity: 0.8;
+      }
+
+      label {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .create-post__photos {
+    margin-bottom: 6px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    height: 110px;
+    white-space: nowrap;
+    clear: both;
+    text-align: left;
+
+    &::-webkit-scrollbar-track {
+      border-radius: 50px;
+      background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar {
+      height: 7px;
+      background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 50px;
+      background-color: #CCCCCC;
+    }
+
+    .photo-upload-item {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 96px;
+      height: 0;
+      padding-bottom: 96px;
+      overflow: hidden;
+      cursor: pointer;
+      @include default-transition();
+
+      &:hover:not(.item__upload) {
+        &:after {
+          background: rgba(0, 0, 0, .4);
+          content: '';
+          height: 100%;
+          position: absolute;
+          width: 100%;
+          left: 0;
+        }
+
+        .photo-delete__action {
+          opacity: 1;
+        }
+      }
+
+      &.item__upload {
+        box-sizing: border-box;
+        border: 2px dashed #dddfe2;
+        border-radius: 2px;
+        height: 6rem;
+
+        .photo-upload__action {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          font-size: 1.3125rem;
+          color: #BBBBBB;
+          line-height: 6rem;
+        }
+      }
+
+      img {
+        position: absolute;
+        display: block;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        min-width: 100%;
+        width: auto;
+      }
+
+      .photo-delete__action {
+        position: absolute;
+        z-index: 99;
+        right: 7px;
+        top: 7px;
+        opacity: 0;
+        @include default-transition();
+
+        i {
+          color: #fff;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .item__color {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    display: block;
+    border: none;
+    position: relative;
+
+    &.active {
+      &:after {
+        content: '';
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+        padding: 0.75rem;
+        z-index: -1;
+        background-color: #fff;
+        border-radius: 0.25rem;
+      }
+    }
+  }
+
+  .create-post__box__color {
+    .create-post__input {
+      font-size: 1.625rem;
+      text-align: center;
+      font-weight: bold;
+      line-height: 33px;
+      padding: 4.5rem 1rem 1rem;
+      color: #fff;
+    }
+
+    .action--close {
+      color: #fff;
+    }
+  }
+
+  .create-post__tag {
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    left: 0.75rem;
+    width: calc(100% - 1.5rem);
+    position: absolute;
+    z-index: 100;
+
+    .tag-icon--delete {
+      font-size: 5px;
+      background: #E5E5E5;
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      line-height: 1rem;
+    }
+
+    .create-post__tag-input {
+      position: relative;
+      background: #F5F5F5;
+      border-radius: 4px;
+      text-align: left;
+      line-height: 40px;
+
+      label {
+        margin: 0;
+        padding: 0 0.8rem;
+        background: #EEEEEE;
+        position: absolute;
+        border-radius: 4px 0 0 4px;
+      }
+
+      input {
+        padding-left: 3.8rem;
+        font-size: inherit;
+        background: transparent;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .dropdown-toggle {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

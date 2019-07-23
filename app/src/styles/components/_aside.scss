@@ -1,0 +1,15 @@
+.gapo-aside {
+  background-color: $white;
+  min-height: calc(100vh - 3.5rem);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+.aside__wrapper {
+  height: 100%;
+  position: relative;
+  background-color: $white;
+}

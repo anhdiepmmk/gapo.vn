@@ -1,0 +1,81 @@
+.gapo-avatar {
+  display: block;
+  background-color: $body-bg;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  background-size: cover;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &.gapo-avatar--32 {
+    width: 2rem;
+  }
+
+  &.gapo-avatar--36 {
+    width: 2.25rem;
+  }
+
+  &.gapo-avatar--24 {
+    width: 1.5rem;
+  }
+
+  &.gapo-avatar--56 {
+    width: 3.5rem;
+  }
+
+  &.gapo-avatar--40 {
+    width: 2.5rem;
+  }
+
+  &.gapo-avatar--48 {
+    width: 3rem;
+  }
+
+  &.gapo-avatar--64 {
+    width: 4rem;
+  }
+
+  &.gapo-avatar--80 {
+    width: 5rem;
+  }
+
+  &.gapo-avatar--30 {
+    width: 1.875rem;
+  }
+
+  &::after {
+    content: '';
+    padding-top: 100%;
+    display: block;
+  }
+
+  &::before {
+    content: '';
+    overflow: hidden;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid rgba($color: $black, $alpha: 0.1);
+    z-index: 2;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+
+    margin: auto;
+    z-index: 1;
+  }
+
+}
